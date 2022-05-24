@@ -5,6 +5,8 @@
 This project was proposed as part of jose's udemy course, my version varies a little its more personalised and contains a few quirks
 I really enjoyed this project as there were many interacting functions and many variables to be aware of.
 
+I have left notes next to all if not most funtions in the actual code to explain the rationale and whatg it does.
+
 wrt. thoughts and notes after the project had been completed >>>
 
 Regarding a few challenges:
