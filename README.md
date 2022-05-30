@@ -35,17 +35,17 @@ Using the new methods that i learned, i found a way to manage the ValueError whi
 Regarding the IndexError, i had to eliminate one conditional statement, however, this wasn't of concern as i covered the condition with an else statement.
 the amended function is shown as follows:
 
-  def player_choice(board):
-    position = 0
-    while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position):
-        try:
-            position = int(input('\nChoose a position on the board between 1-9: '))
-        except ValueError:
-            print("\nSorry, thats an invalid choice! Please select a number between 1 and 9")
-        if position not in range(1,10):
-            print("\nSorry, that's out of range!")
-        else:
-            print("\nSorry, that position is already taken")
-    return position
+        def player_choice(board):
+          position = 0
+          while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board, position):
+              try:
+                  position = int(input('\nChoose a position on the board between 1-9: '))
+              except ValueError:
+                  print("\nSorry, thats an invalid choice! Please select a number between 1 and 9")
+              if position not in range(1,10):
+                  print("\nSorry, that's out of range!")
+              else:
+                  print("\nSorry, that position is already taken")
+          return position
     
 I have uploaded the amended game file as well, called: "Tic Tac Toe - Unbreakable.py" as the game is now unbreakable :D
